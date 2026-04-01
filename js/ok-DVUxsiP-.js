@@ -1,0 +1,1 @@
+import{_ as r}from"./index-DLb9uDv7.js";import"./vue-W-fY6faH.js";import"./pinia-CZpAUB0Z.js";import"./vue-router-M01pxn1g.js";import"./element-plus-CR8m1-pq.js";const t={};function o(c,e){return" 123 "}const s=r(t,[["render",o]]);export{s as default};
