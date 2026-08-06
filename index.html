@@ -2,22 +2,45 @@
 <html lang="">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="pragma" content="no-cache">
+      <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rbh</title>
       <style>
           html,body{
               margin: 0;
               padding: 0;
+              font-size: 14rem;
           }
       </style>
-    <script type="module" crossorigin src="./js/index-CfmvDt2P.js"></script>
-    <link rel="modulepreload" crossorigin href="./js/vue-W-fY6faH.js">
-    <link rel="modulepreload" crossorigin href="./js/pinia-CZpAUB0Z.js">
-    <link rel="modulepreload" crossorigin href="./js/vue-router-M01pxn1g.js">
-    <link rel="modulepreload" crossorigin href="./js/element-plus-CR8m1-pq.js">
-    <link rel="stylesheet" crossorigin href="./css/index-hU4Nd05s.css">
+    <script type="module" crossorigin src="./js/index-DiX_qI6O.js"></script>
+    <link rel="modulepreload" crossorigin href="./js/vue-oLapkMTO.js">
+    <link rel="modulepreload" crossorigin href="./js/pinia-B1DdX8Ci.js">
+    <link rel="modulepreload" crossorigin href="./js/vue-router-BjOjFGsZ.js">
+    <link rel="modulepreload" crossorigin href="./js/element-plus-CfWroWWF.js">
+    <link rel="modulepreload" crossorigin href="./js/crypto-js-DKvWoZgD.js">
+    <link rel="stylesheet" crossorigin href="./css/index-4MljuDv-.css">
   </head>
   <body>
     <div id="app"></div>
+    <script>
+        // px和rem转换
+        (function (win) {
+            function refreshRem() {
+                let wW = document.documentElement.clientWidth || document.body.innerWidth || document.body.clientWidth || window.screen.width || window.screen.availWidth || document.body.clientWidth; // 窗口宽度
+                let designSize = 375; // 设计图尺寸
+                let rem = wW / designSize;
+                document.documentElement.style.fontSize = rem + 'px';
+            }
+
+            // f12改变窗口大小调试的时候方便
+            win.addEventListener('resize', function () {
+                refreshRem();
+            });
+
+            refreshRem();
+
+        })(window);
+    </script>
   </body>
 </html>
